@@ -11,11 +11,10 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
-    
+
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
       <fieldset class="form-field">
-        <legend>Personal iformation</legend>
+        <legend>Personal information</legend>
         <label class="form-label">
           Surname:
           <input
@@ -88,7 +87,7 @@
         </label>
       </fieldset>
       <fieldset class="form-field">
-        <legend>In istering fact about you!</legend>
+        <legend>An interesting fact about you!</legend>
         <label class="form-label">
           Do you love cats?
           <label>
@@ -124,6 +123,7 @@
             type="time" 
             name="time" 
             class="time"
+            step="1"
           >
         </label>
         <label class="form-label">
@@ -131,18 +131,19 @@
           <select name="cars" multiple>
             <option value="bmw">BMW</option>
             <option value="audi">Audi</option>
-            <option value="volvo">Volvo</option>
+            <option value="volvo">Lada</option>
           </select>
-          <label class="form-label">
-            How do you rate our work?
-            <input
-              type="range"
-              name="rate" 
-              min="0"
-              max="10" 
-              class="rate"
-            >
-          </label>
+        </label>
+        <label class="form-label">
+          How do you rate our work?
+          <input
+            type="range"
+            name="rate"
+            min="1"
+            max="10"
+            class="rate"
+            value="1"
+          >
         </label>
       </fieldset>
       <fieldset class="form-field">
@@ -159,8 +160,8 @@
         <label class="form-label">
           Would you recommend us?
           <select name="recommend">
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
+            <option value="yes">yes</option>
+            <option value="no">no</option>
           </select>
         </label>
       </fieldset>
